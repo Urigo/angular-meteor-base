@@ -3,4 +3,3 @@
 /// <reference path="globals/meteor/index.d.ts" />
 /// <reference path="globals/mocha/index.d.ts" />
 /// <reference path="modules/chai-spies/index.d.ts" />
-/// <reference path="modules/es6-promise/index.d.ts" />
