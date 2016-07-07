@@ -20,3 +20,5 @@ autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 angular2-compilers
 barbatus:angular2-runtime
+fourseven:scss
+practicalmeteor:mocha

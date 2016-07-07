@@ -11,6 +11,7 @@
     "sourceMap": true
   },
   "filesGlob": [
+    "!**/*.test.ts",
     "client/**/*.ts",
     "server/**/*.ts",
     "typings/**/*.d.ts"

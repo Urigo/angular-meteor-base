@@ -1,0 +1,7 @@
+$bgColor: #eeeeee;
+
+body {
+  background: $bgColor;
+}
+
+@import "./imports/demo/demo.component";

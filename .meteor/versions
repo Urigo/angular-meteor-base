@@ -16,8 +16,10 @@ blaze@2.1.8
 blaze-tools@1.0.9
 boilerplate-generator@1.0.9
 caching-compiler@1.0.5_1
+caching-html-compiler@1.0.6
 callback-hook@1.0.9
 check@1.2.3
+coffeescript@1.1.2_1
 ddp@1.2.5
 ddp-client@1.2.8_1
 ddp-common@1.2.6
@@ -29,6 +31,7 @@ ecmascript-runtime@0.2.11_1
 ejson@1.0.12
 es5-shim@4.5.12_1
 fastclick@1.0.12
+fourseven:scss@3.8.0_1
 geojson-utils@1.0.9
 hot-code-push@1.0.4
 html-tools@1.0.10
@@ -54,6 +57,11 @@ mongo-id@1.0.5
 npm-mongo@1.4.44_1
 observe-sequence@1.0.12
 ordered-dict@1.0.8
+practicalmeteor:chai@2.1.0_1
+practicalmeteor:loglevel@1.2.0_2
+practicalmeteor:mocha@2.4.5_5
+practicalmeteor:mocha-core@1.0.1
+practicalmeteor:sinon@1.14.1_2
 promise@0.7.2_1
 random@1.0.10
 reactive-var@1.0.10
@@ -64,6 +72,9 @@ spacebars@1.0.12
 spacebars-compiler@1.0.12
 standard-minifier-css@1.0.7_1
 standard-minifier-js@1.0.7_1
+templating@1.1.12_1
+templating-tools@1.0.4
+tmeasday:test-reporter-helpers@0.2.1
 tracker@1.0.14
 ui@1.0.11
 underscore@1.0.9
