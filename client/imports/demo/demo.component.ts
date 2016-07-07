@@ -6,11 +6,11 @@ import {MeteorComponent} from "angular2-meteor";
   templateUrl: '/client/imports/demo/demo.component.html'
 })
 export class DemoComponent extends MeteorComponent {
-  private user : string;
+  greeting : string;
 
   constructor() {
     super();
 
-    this.user = "World"
+    this.greeting = "Hello Demo Component!"
   }
 }
