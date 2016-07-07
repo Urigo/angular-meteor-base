@@ -6,7 +6,8 @@
     "test": "meteor test --driver-package=practicalmeteor:mocha"
   },
   "devDependencies": {
-    "chai": "^.5.0"
+    "chai": "^.5.0",
+    "chai-spies": "^0.7.1"
   },
   "dependencies": {
     "@angular/common": "2.0.0-rc.3",

@@ -2,6 +2,7 @@
   "name": "angular2-meteor-base",
   "version": false,
   "dependencies": {
+    "chai-spies": "registry:npm/chai-spies#0.7.1+20160614064916",
     "es6-promise": "registry:npm/es6-promise#3.0.0+20160211003958"
   },
   "ambientDependencies": {

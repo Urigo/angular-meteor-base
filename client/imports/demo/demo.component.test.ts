@@ -1,15 +1,8 @@
-// angular2-meteor polyfills required for testing
-import "angular2-meteor-tests-polyfills";
-
 // chai uses as asset library
 import {assert} from "chai";
 
 // Angular 2 tests imports
-import {
-  TEST_BROWSER_DYNAMIC_APPLICATION_PROVIDERS,
-  TEST_BROWSER_DYNAMIC_PLATFORM_PROVIDERS
-} from "@angular/platform-browser-dynamic/testing";
-import {inject, setBaseTestProviders} from "@angular/core/testing";
+import {inject} from "@angular/core/testing";
 import {provide} from '@angular/core';
 import {TestComponentBuilder} from "@angular/compiler/testing";
 
@@ -17,9 +10,6 @@ import {TestComponentBuilder} from "@angular/compiler/testing";
 import {DemoComponent} from "./demo.component";
 import {DemoDataService} from "./demo-data.service";
 import {DemoDataObject} from "../../../both/models/demo-data-object";
-
-// Init the test framework
-setBaseTestProviders(TEST_BROWSER_DYNAMIC_PLATFORM_PROVIDERS, TEST_BROWSER_DYNAMIC_APPLICATION_PROVIDERS);
 
 describe('DemoComponent', () => {
   let demoComponentInstance:DemoComponent;

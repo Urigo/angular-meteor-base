@@ -22,3 +22,5 @@ angular2-compilers
 barbatus:angular2-runtime
 fourseven:scss
 practicalmeteor:mocha
+xolvio:cleaner
+hwillson:stub-collections
