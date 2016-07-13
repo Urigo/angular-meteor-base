@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {MeteorComponent} from "angular2-meteor";
-import {DemoDataService} from "./demo-data.service";
+import {MeteorComponent} from 'angular2-meteor';
+import {DemoDataService} from './demo-data.service';
 
 @Component({
   selector: 'demo',
@@ -13,7 +13,7 @@ export class DemoComponent extends MeteorComponent {
   constructor(private demoDataService: DemoDataService) {
     super();
 
-    this.greeting = "Hello Demo Component!";
+    this.greeting = 'Hello Demo Component!';
   }
   
   getData() {
