@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
-import {DemoDataObject} from '../../../both/models/demo-data-object';
 import {Mongo} from 'meteor/mongo';
+
+import {DemoDataObject} from '../../../both/models/demo-data-object';
 import {DemoCollection} from '../../../both/collections/demo-collection';
 
 @Injectable()

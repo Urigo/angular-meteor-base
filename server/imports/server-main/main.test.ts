@@ -2,6 +2,7 @@
 import * as chai from 'chai';
 import * as spies from 'chai-spies';
 import StubCollections from 'meteor/hwillson:stub-collections';
+
 import {DemoCollection} from '../../../both/collections/demo-collection';
 import {Main} from './main';
 
