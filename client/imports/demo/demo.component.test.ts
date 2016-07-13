@@ -1,15 +1,15 @@
 // chai uses as asset library
-import {assert} from 'chai';
+import { assert } from 'chai';
 
 // Angular 2 tests imports
-import {inject} from '@angular/core/testing';
-import {provide} from '@angular/core';
-import {TestComponentBuilder} from '@angular/compiler/testing';
+import { inject } from '@angular/core/testing';
+import { provide } from '@angular/core';
+import { TestComponentBuilder } from '@angular/compiler/testing';
 
 // Project imports
-import {DemoComponent} from './demo.component';
-import {DemoDataService} from './demo-data.service';
-import {DemoDataObject} from '../../../both/models/demo-data-object';
+import { DemoComponent } from './demo.component';
+import { DemoDataService } from './demo-data.service';
+import { DemoDataObject } from '../../../both/models/demo-data-object';
 
 describe('DemoComponent', () => {
   let demoComponentInstance:DemoComponent;

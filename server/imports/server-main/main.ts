@@ -1,5 +1,5 @@
-import {DemoCollection} from '../../../both/collections/demo-collection';
-import {DemoDataObject} from '../../../both/models/demo-data-object';
+import { DemoCollection } from '../../../both/collections/demo-collection';
+import { DemoDataObject } from '../../../both/models/demo-data-object';
 
 export class Main {
   constructor() {
