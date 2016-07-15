@@ -1,9 +1,9 @@
 // chai uses as asset library
-import {assert} from "chai";
-import {Mongo} from "meteor/mongo";
+import { assert } from 'chai';
+import { Mongo } from 'meteor/mongo';
 
 // Project imports
-import {DemoDataService} from "./demo-data.service";
+import { DemoDataService } from './demo-data.service';
 
 describe('DemoDataService', () => {
   let demoDataService:DemoDataService;
