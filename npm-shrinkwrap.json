@@ -2,39 +2,44 @@
   "name": "angular2-meteor-base",
   "dependencies": {
     "@angular/common": {
-      "version": "2.0.0-rc.3",
-      "from": "@angular/common@2.0.0-rc.3",
-      "resolved": "https://registry.npmjs.org/@angular/common/-/common-2.0.0-rc.3.tgz"
+      "version": "2.0.0-rc.4",
+      "from": "@angular/common@2.0.0-rc.4",
+      "resolved": "https://registry.npmjs.org/@angular/common/-/common-2.0.0-rc.4.tgz"
     },
     "@angular/compiler": {
-      "version": "2.0.0-rc.3",
-      "from": "@angular/compiler@2.0.0-rc.3",
-      "resolved": "https://registry.npmjs.org/@angular/compiler/-/compiler-2.0.0-rc.3.tgz"
+      "version": "2.0.0-rc.4",
+      "from": "@angular/compiler@2.0.0-rc.4",
+      "resolved": "https://registry.npmjs.org/@angular/compiler/-/compiler-2.0.0-rc.4.tgz"
     },
     "@angular/core": {
-      "version": "2.0.0-rc.3",
-      "from": "@angular/core@2.0.0-rc.3",
-      "resolved": "https://registry.npmjs.org/@angular/core/-/core-2.0.0-rc.3.tgz"
+      "version": "2.0.0-rc.4",
+      "from": "@angular/core@2.0.0-rc.4",
+      "resolved": "https://registry.npmjs.org/@angular/core/-/core-2.0.0-rc.4.tgz"
     },
     "@angular/platform-browser": {
-      "version": "2.0.0-rc.3",
-      "from": "@angular/platform-browser@2.0.0-rc.3",
-      "resolved": "https://registry.npmjs.org/@angular/platform-browser/-/platform-browser-2.0.0-rc.3.tgz"
+      "version": "2.0.0-rc.4",
+      "from": "@angular/platform-browser@2.0.0-rc.4",
+      "resolved": "https://registry.npmjs.org/@angular/platform-browser/-/platform-browser-2.0.0-rc.4.tgz"
     },
     "@angular/platform-browser-dynamic": {
-      "version": "2.0.0-rc.3",
-      "from": "@angular/platform-browser-dynamic@2.0.0-rc.3",
-      "resolved": "https://registry.npmjs.org/@angular/platform-browser-dynamic/-/platform-browser-dynamic-2.0.0-rc.3.tgz"
+      "version": "2.0.0-rc.4",
+      "from": "@angular/platform-browser-dynamic@2.0.0-rc.4",
+      "resolved": "https://registry.npmjs.org/@angular/platform-browser-dynamic/-/platform-browser-dynamic-2.0.0-rc.4.tgz"
+    },
+    "@angular/router": {
+      "version": "3.0.0-alpha.8",
+      "from": "@angular/router@3.0.0-alpha.8",
+      "resolved": "https://registry.npmjs.org/@angular/router/-/router-3.0.0-alpha.8.tgz"
     },
     "angular2-meteor": {
-      "version": "0.5.6",
-      "from": "angular2-meteor@0.5.6",
-      "resolved": "https://registry.npmjs.org/angular2-meteor/-/angular2-meteor-0.5.6.tgz"
+      "version": "0.6.2",
+      "from": "angular2-meteor@0.6.2",
+      "resolved": "https://registry.npmjs.org/angular2-meteor/-/angular2-meteor-0.6.2.tgz"
     },
     "angular2-meteor-auto-bootstrap": {
-      "version": "0.5.6",
-      "from": "angular2-meteor-auto-bootstrap@0.5.6",
-      "resolved": "https://registry.npmjs.org/angular2-meteor-auto-bootstrap/-/angular2-meteor-auto-bootstrap-0.5.6.tgz"
+      "version": "0.6.0",
+      "from": "angular2-meteor-auto-bootstrap@0.6.0",
+      "resolved": "https://registry.npmjs.org/angular2-meteor-auto-bootstrap/-/angular2-meteor-auto-bootstrap-0.6.0.tgz"
     },
     "angular2-meteor-polyfills": {
       "version": "0.1.1",
