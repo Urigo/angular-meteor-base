@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 
 import { DemoComponent } from './imports/demo/demo.component';
 
+import template from './app.component.html';
+
 @Component({
   selector: 'app',
-  templateUrl: '/client/app.component.html',
+  template,
   directives: [DemoComponent]
 })
 export class Angular2MeteorBase {
   constructor() {
-
   }
 }
