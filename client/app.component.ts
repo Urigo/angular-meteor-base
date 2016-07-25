@@ -7,7 +7,7 @@ import { DemoComponent } from './imports/demo/demo.component';
   templateUrl: '/client/app.component.html',
   directives: [DemoComponent]
 })
-export class Angular2MeteorBase {
+export class AppComponent {
   constructor() {
 
   }
