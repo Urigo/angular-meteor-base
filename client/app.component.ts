@@ -9,7 +9,7 @@ import template from './app.component.html';
   template,
   directives: [DemoComponent]
 })
-export class Angular2MeteorBase {
+export class AppComponent {
   constructor() {
   }
 }
