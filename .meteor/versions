@@ -1,12 +1,12 @@
 allow-deny@1.0.5
-angular2-compilers@0.5.8
-angular2-html-templates@0.5.4
+angular2-compilers@0.6.0
 autopublish@1.0.7
 autoupdate@1.2.10
 babel-compiler@6.8.3
 babel-runtime@0.1.9_1
 barbatus:angular2-runtime@0.5.0
-barbatus:css-compiler@0.2.0
+barbatus:css-compiler@0.3.0
+barbatus:scss-compiler@3.8.1_1
 barbatus:typescript@0.3.3
 barbatus:typescript-compiler@0.6.1
 barbatus:typescript-runtime@0.1.2
@@ -31,7 +31,6 @@ ecmascript-runtime@0.2.11_1
 ejson@1.0.12
 es5-shim@4.5.12_1
 fastclick@1.0.12
-fourseven:scss@3.8.0_1
 geojson-utils@1.0.9
 hot-code-push@1.0.4
 html-tools@1.0.10
@@ -79,6 +78,7 @@ tmeasday:test-reporter-helpers@0.2.1
 tracker@1.0.14
 ui@1.0.11
 underscore@1.0.9
+urigo:static-html-compiler@0.1.7
 url@1.0.10
 webapp@1.2.9_1
 webapp-hashing@1.0.9

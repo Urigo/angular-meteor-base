@@ -10,13 +10,8 @@
     "noImplicitAny": false,
     "sourceMap": true
   },
-  "filesGlob": [
-    "!**/*.test.ts",
-    "client/**/*.ts",
-    "server/**/*.ts",
-    "typings/index.d.ts"
-  ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "compileOnSave": false
 }
