@@ -7,8 +7,8 @@ babel-runtime@0.1.10
 barbatus:angular2-runtime@0.5.0
 barbatus:css-compiler@0.3.0
 barbatus:scss-compiler@3.8.1_1
-barbatus:typescript@0.3.4_1
-barbatus:typescript-compiler@0.6.11
+barbatus:typescript@0.4.0
+barbatus:typescript-compiler@0.7.0
 barbatus:typescript-runtime@0.1.2
 base64@1.0.9
 binary-heap@1.0.9
