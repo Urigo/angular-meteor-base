@@ -1,5 +1,10 @@
-import { bootstrap } from 'angular2-meteor-auto-bootstrap';
+import 'angular2-meteor-polyfills';
 
-import { AppComponent } from './app.component';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { enableProdMode } from '@angular/core';
 
-bootstrap(AppComponent);
+import { AppModule } from './imports/app';
+
+enableProdMode();
+
+platformBrowserDynamic().bootstrapModule(AppModule);

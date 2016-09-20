@@ -4,28 +4,31 @@
   "scripts": {
     "start": "meteor run",
     "test": "meteor test --driver-package practicalmeteor:mocha",
-    "test:ci": "meteor test --once --driver-package dispatch:mocha-phantomjs"
+    "test:ci": "meteor test --once --driver-package dispatch:mocha-phantomjs",
+    "postinstall": "typings i"
   },
   "devDependencies": {
+    "@types/chai": "^3.4.33",
+    "@types/mocha": "^2.2.32",
     "chai": "3.5.0",
-    "chai-spies": "0.7.1"
+    "chai-spies": "0.7.1",
+    "typings": "^1.3.3"
   },
   "dependencies": {
-    "@angular/common": "2.0.0-rc.4",
-    "@angular/compiler": "2.0.0-rc.4",
-    "@angular/core": "2.0.0-rc.4",
-    "@angular/forms": "0.2.0",
-    "@angular/platform-browser": "2.0.0-rc.4",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.4",
-    "@angular/router": "3.0.0-alpha.8",
-    "angular2-meteor": "0.6.2",
-    "angular2-meteor-auto-bootstrap": "0.6.0",
-    "angular2-meteor-polyfills": "0.1.1",
+    "@angular/common": "2.0.0",
+    "@angular/compiler": "2.0.0",
+    "@angular/core": "2.0.0",
+    "@angular/forms": "2.0.0",
+    "@angular/platform-browser": "2.0.0",
+    "@angular/platform-browser-dynamic": "2.0.0",
+    "@angular/router": "3.0.0",
+    "angular2-meteor": "0.7.0-beta.2",
+    "angular2-meteor-polyfills": "^0.1.1",
     "angular2-meteor-tests-polyfills": "0.0.2",
-    "es6-shim": "0.35.1",
     "meteor-node-stubs": "0.2.3",
-    "reflect-metadata": "0.1.3",
-    "rxjs": "5.0.0-beta.6",
-    "zone.js": "0.6.12"
+    "meteor-rxjs": "0.1.0",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "^0.6.21"
   }
 }

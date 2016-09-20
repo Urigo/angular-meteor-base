@@ -1,4 +1,4 @@
 import { Main } from './imports/server-main/main';
 
-let mainInstance = new Main();
+const mainInstance = new Main();
 mainInstance.start();
