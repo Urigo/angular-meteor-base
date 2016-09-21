@@ -1,4 +1,4 @@
-import {DemoDataObject} from "../models/demo-data-object";
-import {Mongo} from "meteor/mongo";
+import { MongoObservable } from 'meteor-rxjs';
+import { DemoDataObject } from '../models/demo-data-object';
 
-export const DemoCollection = new Mongo.Collection<DemoDataObject>('demo-collection');
+export const DemoCollection = new MongoObservable.Collection<DemoDataObject>('demo-collection');
