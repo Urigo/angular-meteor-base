@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { METEOR_PROVIDERS } from 'angular2-meteor';
-
 import { AppComponent } from './app.component';
 import { DemoComponent } from './demo/demo.component';
 import { DemoDataService } from './demo/demo-data.service';
