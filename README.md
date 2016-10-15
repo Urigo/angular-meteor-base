@@ -33,7 +33,7 @@ This application also contains demo code:
 - Main Component (`/client/app.component`)
 - Demo Child Component (`/client/imports/demo/demo.component`)
 - Demo Service (`/client/imports/demo/demo-data.service`)
-- Demo Mongo Collection (`/both/demo-collection.ts`)
+- Demo Mongo Collection (`/both/demo.collection.ts`) with a TypeScript interface as model.
 
 The Main component loads the child component, which uses the demo service that gets it's data from the demo collection.
 
