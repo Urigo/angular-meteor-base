@@ -1,32 +1,43 @@
 // chai uses as asset library
-import { assert } from 'chai';
+import {assert} from 'chai';
 
 // Angular 2 tests imports
-import { TestBed } from "@angular/core/testing";
+import {TestBed, TestModuleMetadata} from "@angular/core/testing";
 
 // Project imports
-import { DemoComponent } from './demo.component';
-import { Demo } from "../../../../both/models/demo.model";
+import {DemoComponent} from './demo.component';
+import {Demo} from "../../../../both/models/demo.model";
+import {DemoDataService} from "./demo-data.service";
+import {Observable, Subject, BehaviorSubject} from "rxjs";
 
 describe('DemoComponent', () => {
-  let demoComponentInstance:DemoComponent;
+  let demoComponentInstance: DemoComponent;
   let demoComponentElement;
   let componentFixture;
 
-  let mockDataArray = [
+  let mockData = new BehaviorSubject([]);
+  mockData.next([
     <Demo>{
       name: 'Test',
       age: 10
     }
-  ];
+  ]);
+
+  let mockDataService = {
+    getData: () => mockData
+  };
 
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [ DemoComponent ],
+    TestBed.configureTestingModule(<TestModuleMetadata>{
+      declarations: [DemoComponent],
+      providers: [
+        {provide: DemoDataService, useValue: mockDataService}
+      ]
     });
 
     componentFixture = TestBed.createComponent(DemoComponent);
     demoComponentInstance = componentFixture.componentInstance;
+    demoComponentElement = componentFixture.debugElement;
   });
 
   describe('@Component instance', () => {
@@ -38,43 +49,41 @@ describe('DemoComponent', () => {
       assert.equal(demoComponentInstance.greeting, 'Hello Demo Component!');
     });
 
-    it('Should have an array (from the mock) of the instance', () => {
-      assert.typeOf(demoComponentInstance.data, 'array');
+    it('Should have an Observable (from the mock) of the instance', () => {
+      demoComponentInstance.ngOnInit();
+      assert.isTrue(demoComponentInstance.data instanceof Observable);
     });
 
-    it('Should have an items in the array', () => {
-      assert.typeOf(demoComponentInstance.data, 'array');
-      assert.equal((<Array>demoComponentInstance.data).length, 1);
+    it('Should have an items in the Observable', (done) => {
+      demoComponentInstance.ngOnInit();
+      assert.isTrue(demoComponentInstance.data instanceof Observable);
+
+      demoComponentInstance.data.subscribe((data) => {
+        assert.equal(data.length, 1);
+        assert.typeOf(data, 'array');
+
+        done();
+      });
     });
   });
 
   describe('@Component view', () => {
     it('Should print the greeting to the screen', () => {
-      assert.include(demoComponentElement.innerHTML, 'Hello Demo Component');
+      componentFixture.detectChanges();
+      assert.include(demoComponentElement.nativeElement.innerHTML, 'Hello Demo Component');
     });
 
     it('Should change the greeting when it changes', () => {
-      assert.include(demoComponentElement.innerHTML, 'Hello Demo Component');
+      componentFixture.detectChanges();
+      assert.include(demoComponentElement.nativeElement.innerHTML, 'Hello Demo Component');
       demoComponentInstance.greeting = 'New Test Greeting';
       componentFixture.detectChanges();
-      assert.include(demoComponentElement.innerHTML, 'New Test Greeting');
+      assert.include(demoComponentElement.nativeElement.innerHTML, 'New Test Greeting');
     });
 
     it('Should display a list of items in the screen', () => {
-      assert.isNotNull(demoComponentElement.querySelector('ul'));
-    });
-
-    it('Should add item to the list when modifying the data in the service', () => {
-      assert.equal(demoComponentElement.querySelectorAll('li').length, 1);
-
-      mockDataArray.push({
-        name: 'Dotan',
-        age: 20
-      });
-
       componentFixture.detectChanges();
-
-      assert.equal(demoComponentElement.querySelectorAll('li').length, 2);
+      assert.isNotNull(demoComponentElement.nativeElement.querySelector('ul'));
     });
   });
 });

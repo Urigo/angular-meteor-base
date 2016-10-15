@@ -1,9 +1,9 @@
 // chai uses as asset library
 import { assert } from 'chai';
-import { Mongo } from 'meteor/mongo';
 
 // Project imports
 import { DemoDataService } from './demo-data.service';
+import { Observable } from "rxjs";
 
 describe('DemoDataService', () => {
   let demoDataService:DemoDataService;
@@ -13,7 +13,7 @@ describe('DemoDataService', () => {
     demoDataService = new DemoDataService();
   });
 
-  it('Should return MongoDB Cursor when requesting the data', () => {
-    assert.isTrue(demoDataService.getData() instanceof Mongo.Cursor);
+  it('Should return Observable when requesting the data', () => {
+    assert.isTrue(demoDataService.getData() instanceof Observable);
   });
 });
