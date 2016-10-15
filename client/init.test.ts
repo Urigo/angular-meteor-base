@@ -2,8 +2,8 @@
 import 'angular2-meteor-tests-polyfills';
 
 // Angular 2 tests imports
-import { platformBrowserDynamicTesting, BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic';
-import { TestBed } from '@angular/core';
+import { TestBed } from '@angular/core/testing';
+import { platformBrowserDynamicTesting, BrowserDynamicTestingModule } from "@angular/platform-browser-dynamic/testing";
 
 // Init the test framework
 TestBed.initTestEnvironment(

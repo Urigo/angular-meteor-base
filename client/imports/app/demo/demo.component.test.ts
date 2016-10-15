@@ -2,13 +2,10 @@
 import { assert } from 'chai';
 
 // Angular 2 tests imports
-import { inject } from '@angular/core';
-import { provide } from '@angular/core';
-import { TestComponentBuilder } from '@angular/compiler';
+import { TestBed } from "@angular/core/testing";
 
 // Project imports
 import { DemoComponent } from './demo.component';
-import { DemoDataService } from './demo-data.service';
 import { Demo } from "../../../../both/models/demo.model";
 
 describe('DemoComponent', () => {
@@ -23,26 +20,14 @@ describe('DemoComponent', () => {
     }
   ];
 
-  let mockDataService = {
-    getData: () => mockDataArray
-  };
-
-  beforeEach(inject([TestComponentBuilder], (tcb:TestComponentBuilder) => {
-    // We inject TestComponentBuilder that provides use the ability to control the injections of the component
-    // Then we will request to get DemoComponent with a mock service instead of the real DemoDataService
-    // The fixture created contain the element and the instance of the Component class
-    // Finally, we need to save 'detectChanges' and call it to flush the changes into the view.
-    return tcb.overrideProviders(DemoComponent, [
-      provide(DemoDataService, {useValue: mockDataService})
-    ]).createAsync(DemoComponent).then((fixture) => {
-      componentFixture = fixture;
-
-      demoComponentInstance = componentFixture.componentInstance;
-      demoComponentElement = componentFixture.nativeElement;
-
-      componentFixture.detectChanges();
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [ DemoComponent ],
     });
-  }));
+
+    componentFixture = TestBed.createComponent(DemoComponent);
+    demoComponentInstance = componentFixture.componentInstance;
+  });
 
   describe('@Component instance', () => {
     it('Should have a greeting string on the component', () => {
@@ -54,12 +39,12 @@ describe('DemoComponent', () => {
     });
 
     it('Should have an array (from the mock) of the instance', () => {
-      assert.typeOf(demoComponentInstance.getData(), 'array');
+      assert.typeOf(demoComponentInstance.data, 'array');
     });
 
     it('Should have an items in the array', () => {
-      assert.typeOf(demoComponentInstance.getData(), 'array');
-      assert.equal((<Array>demoComponentInstance.getData()).length, 1);
+      assert.typeOf(demoComponentInstance.data, 'array');
+      assert.equal((<Array>demoComponentInstance.data).length, 1);
     });
   });
 
