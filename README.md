@@ -8,6 +8,14 @@ Since Meteor v1.4 you can use one command to create a working Angular2 app based
 meteor create --example angular2-boilerplate
 ```
 
+## NPM Scripts
+
+This boilerplate comes with predefined NPM scripts, defined in `package.json`:
+
+- `$ npm run start` - Run the Meteor application.
+- `$ npm run test` - Executes Meteor in test mode with Mocha.
+- `$ npm run test:ci` - Executes Meteor in test mode with Mocha for CI (run once).
+
 ## Boilerplate Contents
 
 This boilerplate contains the basics that requires to quick start with Angular2-Meteor application.
