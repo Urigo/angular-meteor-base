@@ -1,3 +1,6 @@
+// angular2-meteor polyfills
+import 'angular2-meteor-polyfills';
+
 // angular2-meteor polyfills required for testing
 import 'angular2-meteor-tests-polyfills';
 
