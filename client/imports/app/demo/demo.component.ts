@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ObservableCursor } from 'meteor-rxjs';
 import { Observable } from 'rxjs/Observable';
 import { DemoDataService } from './demo-data.service';
 import { Demo } from "../../../../both/models/demo.model";
