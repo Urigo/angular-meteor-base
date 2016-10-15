@@ -3,10 +3,12 @@ import { Observable } from 'rxjs/Observable';
 import { DemoDataService } from './demo-data.service';
 import { Demo } from "../../../../both/models/demo.model";
 import template from './demo.component.html';
+import style from "./demo.component.scss";
 
 @Component({
   selector: 'demo',
-  template
+  template,
+  styles: [ style ]
 })
 export class DemoComponent implements OnInit {
   greeting: string;
