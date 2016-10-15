@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ObservableCursor } from 'meteor-rxjs';
 import { Observable } from 'rxjs/Observable';
-
 import { DemoDataService } from './demo-data.service';
-import { DemoDataObject } from '../../../../both/models/demo-data-object';
-
+import { Demo } from "../../../../both/models/demo.model";
 import template from './demo.component.html';
 
 @Component({
@@ -13,7 +11,7 @@ import template from './demo.component.html';
 })
 export class DemoComponent implements OnInit {
   greeting: string;
-  data: Observable<DemoDataObject[]>;
+  data: Observable<Demo[]>;
 
   constructor(private demoDataService: DemoDataService) {
     this.greeting = 'Hello Demo Component!';

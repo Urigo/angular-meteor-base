@@ -1,6 +1,5 @@
-import { DemoCollection } from '../../../both/collections/demo-collection';
-import { DemoDataObject } from '../../../both/models/demo-data-object';
-
+import {DemoCollection} from "../../../both/collections/demo.collection";
+import {Demo} from "../../../both/models/demo.model";
 export class Main {
   start(): void {
     this.initFakeData();
@@ -8,7 +7,7 @@ export class Main {
 
   initFakeData(): void {
     if (DemoCollection.find({}).cursor.count() === 0) {
-      const data: DemoDataObject[] = [{
+      const data: Demo[] = [{
         name: 'Dotan',
         age: 25
       }, {
@@ -19,7 +18,7 @@ export class Main {
         age: 30
       }];
       
-      data.forEach((obj: DemoDataObject) => {
+      data.forEach((obj: Demo) => {
         DemoCollection.insert(obj);
       });
     }
