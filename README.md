@@ -1,5 +1,8 @@
 # Angular2-Meteor-Base Tutorial
 
+[![bitHound Overall Score](https://www.bithound.io/github/bsliran/angular2-meteor-base/badges/score.svg)](https://www.bithound.io/github/bsliran/angular2-meteor-base) [![bitHound Dependencies](https://www.bithound.io/github/bsliran/angular2-meteor-base/badges/dependencies.svg)](https://www.bithound.io/github/bsliran/angular2-meteor-base/master/dependencies/npm)
+
+
 ## Usage
 
 Since Meteor v1.4 you can use one command to create a working Angular2 app based on this boilerplate:
