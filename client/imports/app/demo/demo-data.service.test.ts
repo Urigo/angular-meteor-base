@@ -6,7 +6,7 @@ import { DemoDataService } from "./demo-data.service";
 import { Observable } from "rxjs";
 
 describe("DemoDataService", () => {
-  let demoDataService:DemoDataService;
+  let demoDataService: DemoDataService;
 
   beforeEach(() => {
     // Create the service instance

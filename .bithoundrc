@@ -20,6 +20,7 @@
         "rxjs"
       ],
       "unused-ignores": [
+        "@angular/*",
         "zone.js",
         "try-thread-sleep",
         "spawn-sync",

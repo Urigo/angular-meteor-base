@@ -9,7 +9,7 @@ import { DemoCollection } from "../../../both/collections/demo.collection";
 chai.use(spies);
 
 describe("Server Main", () => {
-  let mainInstance : Main;
+  let mainInstance: Main;
 
   beforeEach(() => {
     // Creating database mock

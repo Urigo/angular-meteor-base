@@ -18,7 +18,6 @@ export class Main {
         name: "Uri",
         age: 30
       }];
-      
       data.forEach((obj: Demo) => {
         DemoCollection.insert(obj);
       });

@@ -18,7 +18,7 @@ TestBed.initTestEnvironment(
   platformBrowserDynamicTesting()
 );
 
-declare var Mocha: {Hook: any}, mocha: { suite : { _beforeEach: any, ctx: any }};
+declare var Mocha: {Hook: any}, mocha: { suite: { _beforeEach: any, ctx: any }};
 
 const hook = new Mocha.Hook("Modified Angular beforeEach Hook", () => {
   getTestBed().resetTestingModule();
