@@ -1,5 +1,6 @@
 import {DemoCollection} from "../../../both/collections/demo.collection";
 import {Demo} from "../../../both/models/demo.model";
+
 export class Main {
   start(): void {
     this.initFakeData();
@@ -8,13 +9,13 @@ export class Main {
   initFakeData(): void {
     if (DemoCollection.find({}).cursor.count() === 0) {
       const data: Demo[] = [{
-        name: 'Dotan',
+        name: "Dotan",
         age: 25
       }, {
-        name: 'Liran',
+        name: "Liran",
         age: 26
       }, {
-        name: 'Uri',
+        name: "Uri",
         age: 30
       }];
       

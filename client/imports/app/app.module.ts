@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { DemoComponent } from './demo/demo.component';
-import { DemoDataService } from './demo/demo-data.service';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { AppComponent } from "./app.component";
+import { DemoComponent } from "./demo/demo.component";
+import { DemoDataService } from "./demo/demo-data.service";
 
 @NgModule({
   // Components, Pipes, Directive
@@ -25,4 +25,8 @@ import { DemoDataService } from './demo/demo-data.service';
   // Main Component
   bootstrap: [ AppComponent ]
 })
-export class AppModule {}
+export class AppModule {
+  constructor() {
+
+  }
+}

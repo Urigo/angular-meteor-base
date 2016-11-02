@@ -1,11 +1,11 @@
 // chai uses as asset library
-import { assert } from 'chai';
+import { assert } from "chai";
 
 // Project imports
-import { DemoDataService } from './demo-data.service';
+import { DemoDataService } from "./demo-data.service";
 import { Observable } from "rxjs";
 
-describe('DemoDataService', () => {
+describe("DemoDataService", () => {
   let demoDataService:DemoDataService;
 
   beforeEach(() => {
@@ -13,7 +13,7 @@ describe('DemoDataService', () => {
     demoDataService = new DemoDataService();
   });
 
-  it('Should return Observable when requesting the data', () => {
+  it("Should return Observable when requesting the data", () => {
     assert.isTrue(demoDataService.getData() instanceof Observable);
   });
 });
