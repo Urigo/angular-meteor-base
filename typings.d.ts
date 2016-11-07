@@ -1,6 +1,8 @@
 /// <reference types="zone.js" />
 /// <reference types="meteor-typings" />
 /// <reference types="@types/underscore" />
+/// <reference types="@types/chai" />
+/// <reference types="@types/mocha" />
 
 declare module "*.html" {
   const template: string;
@@ -27,3 +29,15 @@ declare module "*.sass" {
   export default style;
 }
 
+declare module "meteor/hwillson:stub-collections" {
+  import { Mongo } from "meteor/mongo";
+
+  interface IStubCollections {
+    stub(collection: Mongo.Collection);
+    restore();s
+  }
+
+  const StubCollections: IStubCollections;
+
+  export default StubCollections;
+}
