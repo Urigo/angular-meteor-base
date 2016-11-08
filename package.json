@@ -11,7 +11,7 @@
     "test:ci": "meteor test --once --driver-package dispatch:mocha-phantomjs"
   },
   "devDependencies": {
-    "@types/chai": "3.4.33",
+    "@types/chai": "3.4.34",
     "@types/mocha": "2.2.32",
     "chai": "3.5.0",
     "chai-spies": "0.7.1",
@@ -31,7 +31,7 @@
     "angular2-meteor-tests-polyfills": "0.0.2",
     "meteor-rxjs": "0.4.3",
     "reflect-metadata": "0.1.8",
-    "rxjs": "5.0.0-beta.12",
+    "rxjs": "5.0.0-rc.2",
     "zone.js": "0.6.26"
   }
 }
