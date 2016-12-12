@@ -20,6 +20,7 @@
         "rxjs"
       ],
       "unused-ignores": [
+        "babel-runtime",
         "@angular/*",
         "zone.js",
         "try-thread-sleep",
