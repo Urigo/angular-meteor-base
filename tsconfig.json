@@ -14,9 +14,6 @@
   "exclude": [
     "node_modules"
   ],
-  "files": [
-    "typings.d.ts"
-  ],
   "compileOnSave": false,
   "angularCompilerOptions": {
     "genDir": "aot",
