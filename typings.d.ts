@@ -33,7 +33,7 @@ declare module "meteor/hwillson:stub-collections" {
   import { Mongo } from "meteor/mongo";
 
   interface IStubCollections {
-    stub(collection: Mongo.Collection);
+    stub(collection: Mongo.Collection<any>);
     restore();
   }
 
