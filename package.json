@@ -1,38 +1,25 @@
 {
-  "name": "angular2-meteor-base",
   "private": true,
   "scripts": {
-    "start": "meteor run",
-    "start:prod": "meteor run --production",
-    "build": "meteor build ./build/",
-    "clear": "meteor reset",
-    "meteor:update": "meteor update --all-packages",
-    "test": "meteor test --driver-package practicalmeteor:mocha",
-    "test:ci": "meteor test --once --driver-package dispatch:mocha-phantomjs"
-  },
-  "devDependencies": {
-    "@types/chai": "3.4.34",
-    "@types/meteor": "^1.3.31",
-    "@types/mocha": "2.2.34",
-    "chai": "3.5.0",
-    "chai-spies": "0.7.1",
-    "meteor-node-stubs": "0.2.4"
+    "start": "meteor run"
   },
   "dependencies": {
-    "@angular/common": "2.4.1",
-    "@angular/compiler": "2.4.1",
-    "@angular/core": "2.4.1",
-    "@angular/forms": "2.4.1",
-    "@angular/platform-browser": "2.4.1",
-    "@angular/platform-browser-dynamic": "2.4.1",
-    "@angular/router": "3.4.1",
-    "angular2-meteor": "0.7.1",
-    "angular2-meteor-polyfills": "0.1.1",
-    "angular2-meteor-tests-polyfills": "0.0.2",
-    "babel-runtime": "^6.18.0",
-    "meteor-rxjs": "0.4.7",
-    "reflect-metadata": "0.1.9",
-    "rxjs": "5.0.2",
-    "zone.js": "0.7.4"
+    "@angular/animations": "^4.4.6",
+    "@angular/common": "^4.4.6",
+    "@angular/compiler": "^4.4.6",
+    "@angular/core": "^4.4.6",
+    "@angular/forms": "^4.4.6",
+    "@angular/http": "^4.4.6",
+    "@angular/platform-browser": "^4.4.6",
+    "@angular/platform-browser-dynamic": "^4.4.6",
+    "@angular/router": "^4.4.6",
+    "babel-runtime": "^6.20.0",
+    "meteor-node-stubs": "~0.3.0",
+    "meteor-rxjs": "^0.4.8",
+    "rxjs": "^5.4.2",
+    "zone.js": "^0.8.16"
+  },
+  "devDependencies": {
+    "@types/meteor": "1.4.12"
   }
 }
