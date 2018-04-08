@@ -20,7 +20,7 @@
     "meteor-node-stubs": "0.3.2",
     "meteor-rxjs": "0.4.8",
     "rxjs": "5.5.2",
-    "zone.js": "0.8.18"
+    "zone.js": "0.8.26"
   },
   "devDependencies": {
     "@angular/compiler-cli": "5.0.5",
