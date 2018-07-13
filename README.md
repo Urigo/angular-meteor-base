@@ -1,7 +1,4 @@
-# Angular2-Meteor Boilerplate
-
-[![bitHound Overall Score](https://www.bithound.io/github/Urigo/angular-meteor-base/badges/score.svg)](https://www.bithound.io/github/Urigo/angular-meteor-base) [![bitHound Dependencies](https://www.bithound.io/github/Urigo/angular-meteor-base/badges/dependencies.svg)](https://www.bithound.io/github/Urigo/angular-meteor-base/master/dependencies/npm)
-
+# Angular-Meteor Boilerplate
 
 ## Usage
 
@@ -36,14 +33,6 @@ This package contains:
 - Testing framework with Mocha and Chai
 - [Meteor-RxJS](http://angular-meteor.com/meteor-rxjs/) support and usage
 
-This application also contains demo code:
-
-- Main Component (`/client/app.component`)
-- Demo Child Component (`/client/imports/demo/demo.component`)
-- Demo Service (`/client/imports/demo/demo-data.service`)
-- Demo Mongo Collection (`/both/demo.collection.ts`) with a TypeScript interface as model.
-
-The Main component loads the child component, which uses the demo service that gets it's data from the demo collection.
 
 ### Folder Structure
 
@@ -51,7 +40,7 @@ The folder structure is a mix between [Angular 2 recommendation](https://johnpap
 
 ### Client
 
-The `client` folder contains single TypeScript (`.ts`) file which is the main file (`/client/app.component.ts`), and bootstrap's the Angular 2 application.
+The `client` folder contains single TypeScript (`.ts`) file which is the main file (`/client/app.component.ts`), and bootstrap's the Angular application.
 
 The main component uses HTML template and SASS file.
 
@@ -74,8 +63,3 @@ Example for common files in our app, is the MongoDB collection we create - it lo
 
 The testing environment in this boilerplate based on [Meteor recommendation](https://guide.meteor.com/testing.html), and uses Mocha as testing framework along with Chai for assertion.
 
-There is a main test file that initialize Angular 2 tests library, it located under `/client/init.test.ts`.
-
-All other test files are located near the component/service it tests, with the `.test.ts` extension.
-
-The `DemoComponent` contains example for Angular 2 tests for Component, and in the server side there is an example for testing Meteor collections and stub data.
