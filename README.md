@@ -1,6 +1,6 @@
 # Angular2-Meteor Boilerplate
 
-[![bitHound Overall Score](https://www.bithound.io/github/Urigo/angular2-meteor-base/badges/score.svg)](https://www.bithound.io/github/Urigo/angular2-meteor-base) [![bitHound Dependencies](https://www.bithound.io/github/Urigo/angular2-meteor-base/badges/dependencies.svg)](https://www.bithound.io/github/Urigo/angular2-meteor-base/master/dependencies/npm)
+[![bitHound Overall Score](https://www.bithound.io/github/Urigo/angular-meteor-base/badges/score.svg)](https://www.bithound.io/github/Urigo/angular-meteor-base) [![bitHound Dependencies](https://www.bithound.io/github/Urigo/angular-meteor-base/badges/dependencies.svg)](https://www.bithound.io/github/Urigo/angular-meteor-base/master/dependencies/npm)
 
 
 ## Usage
@@ -30,8 +30,8 @@ This boilerplate contains the basics that requires to quick start with Angular2-
 This package contains:
 
 - TypeScript support (with `@types`) and Angular 2 compilers for Meteor
-- Angular2-Meteor
-- Angular 2 (core, common, compiler, platform, router, forms)
+- Angular-Meteor
+- Angular (core, common, compiler, platform, router, forms)
 - SASS, LESS, CSS support (Also support styles encapsulation for Angular 2)
 - Testing framework with Mocha and Chai
 - [Meteor-RxJS](http://angular-meteor.com/meteor-rxjs/) support and usage
