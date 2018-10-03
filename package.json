@@ -30,7 +30,7 @@
     "@types/sinon": "4.3.0",
     "chai": "4.1.2",
     "phantomjs-prebuilt": "2.1.16",
-    "sinon": "4.4.6",
+    "sinon": "6.3.5",
     "typescript": "2.8.3"
   }
 }
