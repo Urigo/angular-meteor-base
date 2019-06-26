@@ -5,7 +5,13 @@
 Since Meteor v1.4 you can use one command to create a working Angular2 app based on this boilerplate:
 
 ```
-meteor create --example angular2-boilerplate
+meteor create --example angular-boilerplate
+```
+
+This will tell you to clone this repo though, so sinc you're here you might as well do git clone immediately:
+
+```
+git clone https://github.com/Urigo/angular-meteor-base.git
 ```
 
 ## NPM Scripts
