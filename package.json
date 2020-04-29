@@ -25,10 +25,10 @@
     "@angular/compiler-cli": "7.1.1",
     "@types/chai": "4.1.7",
     "@types/meteor": "1.4.23",
-    "@types/mocha": "5.2.5",
+    "@types/mocha": "7.0.2",
     "@types/sinon": "5.0.7",
     "chai": "4.2.0",
-    "mocha": "5.2.0",
+    "mocha": "7.1.2",
     "puppeteer": "1.10.0",
     "sinon": "7.1.1",
     "typescript": "3.1.6"
