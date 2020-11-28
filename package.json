@@ -15,7 +15,7 @@
     "@angular/platform-browser-dynamic": "7.1.1",
     "@angular/router": "7.1.1",
     "@babel/runtime": "7.1.5",
-    "core-js": "2.5.7",
+    "core-js": "2.6.12",
     "meteor-node-stubs": "0.4.1",
     "meteor-rxjs": "0.4.14",
     "rxjs": "6.3.3",
